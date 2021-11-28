@@ -81,6 +81,7 @@ body {
   height: auto;
 }
 
+
 /* -----------------Стилизация списков------------------------ */
 .list { 
   list-style: none;
@@ -172,6 +173,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
 }
 
 .header {
@@ -180,7 +186,9 @@ body {
 }
 
 .header-contacts-link { 
-  color: var(--second-text);
+  color: var(--second-text); 
+
+  
 }
 
 .header-link.now { 
@@ -297,7 +305,7 @@ body {
 .footer-social-link:hover ,
 .footer-social-link:focus { 
   background-color: var(--accent);
-  border-radius: 50%;
+  
   outline: none;
 }
 
@@ -308,6 +316,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .footer-socail-icon { 
@@ -524,10 +538,6 @@ body {
  
 
 .social-item { 
-  /* display: inline-flex;
-  justify-content: center;
-  align-items: center; */
-  
   width: 44px;
   height: 44px;
   
@@ -543,9 +553,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
   
   width: 44px;
   height: 44px;
+
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: ;
 }
 
 
@@ -553,7 +569,6 @@ body {
 .social-link:hover,
 .social-link:focus { 
   outline: none;
-  border-radius: 50%;
   background-color: var(--accent);
 }
 
@@ -564,7 +579,11 @@ body {
 
 .social-box { 
   fill: var(--icon-color);
- 
+
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 
@@ -602,10 +621,20 @@ body {
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+
+  transition-property:border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .clients-icon { 
   fill: var(--icon-color);
+
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 
@@ -644,6 +673,11 @@ body {
   border: 0;
   padding: 6px 22px;
   border-radius: 4px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 
@@ -693,7 +727,6 @@ body {
 }
 
 .portfolio-meta { 
-  content: '';
   width: 100%;
   height: 100%; 
   position: absolute;
@@ -701,6 +734,10 @@ body {
   
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .portfolio-hover-text { 
@@ -718,6 +755,11 @@ body {
   display: block;
   text-decoration: none;
   color: var(--main-text);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .portfolio-img {
